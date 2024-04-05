@@ -17,9 +17,8 @@ const HeroSection = () => {
               <div className="icon-wrapper mb-2"><AiOutlineWhatsApp size={30} /></div>
             </div>
             <div className='relative'>
-              <div className="absolute top-0 right-0 w-5 h-5 bg-black rotate-[30deg] "></div>
               <Image src="/verahprofile.jpeg" alt="verah" width={250} height={250} className='w-[250px] shadow-md' />
-              <div className="absolute bottom-2 left-4 w-[250px] h-[320px] border-black border-2 -z-10"></div>
+              <div className="absolute bottom-2 left-4 w-[250px] h-[320px] border-black bg-slate-200 border-2 -z-10"></div>
             </div>
           </div>
         </div>
