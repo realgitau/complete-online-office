@@ -6,7 +6,7 @@ const Books = () => {
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="max-w-xl mx-auto text-center xl:max-w-2xl">
           <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl xl:text-5xl mb-6">BOOKS </h2>
-          <p className="mb-4">Here are some of the Awards that I've received over the years</p>
+          <p className="mb-4">Here are some of the Awards that I&apos;ve received over the years</p>
         </div>
         <div className="grid max-w-4xl lg:max-w-6xl grid-cols-1 mx-auto mt-8 text-center gap-y-4 sm:gap-x-8 sm:grid-cols-2 lg:grid-cols-3 sm:text-left">
           <div className="relative">
@@ -45,8 +45,8 @@ const Books = () => {
               <div className="p-4">
                 <h3 className="mt-2 text-2xl font-bold text-gray-900 sm:mt-10">The Craft of Creative Writing with Mugeni Ojiambo Ksh. 1,000</h3>
                 <p className="mt-2 text-base text-gray-600">
-                  Have you been fantasizing about writing a great book? Or you've written, and all you get are rejections? The Craft of Creative Writing is the writing companion you need.
-                  No matter what your writing goals are, this book ensures nothing stands between you and good writing. It is a handbook. A guide. A reference point. A promise of hope for your writing. Exactly what you need. Writing is work, so let's get to work, shall
+                  Have you been fantasizing about writing a great book? Or you&apos;ve written, and all you get are rejections? The Craft of Creative Writing is the writing companion you need.
+                  No matter what your writing goals are, this book ensures nothing stands between you and good writing. It is a handbook. A guide. A reference point. A promise of hope for your writing. Exactly what you need. Writing is work, so let&apos;s get to work, shall
                 </p>
               </div>
             </div>
@@ -58,8 +58,8 @@ const Books = () => {
               <div className="p-4">
                 <h3 className="mt-2 text-2xl font-bold text-gray-900 sm:mt-10">The Craft of Creative Writing with Mugeni Ojiambo Ksh. 1,000</h3>
                 <p className="mt-2 text-base text-gray-600">
-                  Have you been fantasizing about writing a great book? Or you've written, and all you get are rejections? The Craft of Creative Writing is the writing companion you need.
-                  No matter what your writing goals are, this book ensures nothing stands between you and good writing. It is a handbook. A guide. A reference point. A promise of hope for your writing. Exactly what you need. Writing is work, so let's get to work, shall
+                  Have you been fantasizing about writing a great book? Or you&apos;ve written, and all you get are rejections? The Craft of Creative Writing is the writing companion you need.
+                  No matter what your writing goals are, this book ensures nothing stands between you and good writing. It is a handbook. A guide. A reference point. A promise of hope for your writing. Exactly what you need. Writing is work, so let&apos;s get to work, shall
                 </p>
               </div>
             </div>
@@ -71,8 +71,8 @@ const Books = () => {
               <div className="p-4">
                 <h3 className="mt-2 text-2xl font-bold text-gray-900 sm:mt-10">The Craft of Creative Writing with Mugeni Ojiambo Ksh. 1,000</h3>
                 <p className="mt-2 text-base text-gray-600">
-                  Have you been fantasizing about writing a great book? Or you've written, and all you get are rejections? The Craft of Creative Writing is the writing companion you need.
-                  No matter what your writing goals are, this book ensures nothing stands between you and good writing. It is a handbook. A guide. A reference point. A promise of hope for your writing. Exactly what you need. Writing is work, so let's get to work, shall
+                  Have you been fantasizing about writing a great book? Or you&apos;ve written, and all you get are rejections? The Craft of Creative Writing is the writing companion you need.
+                  No matter what your writing goals are, this book ensures nothing stands between you and good writing. It is a handbook. A guide. A reference point. A promise of hope for your writing. Exactly what you need. Writing is work, so let&apos;s get to work, shall
                 </p>
               </div>
             </div>
@@ -84,8 +84,8 @@ const Books = () => {
               <div className="p-4">
                 <h3 className="mt-2 text-2xl font-bold text-gray-900 sm:mt-10">The Craft of Creative Writing with Mugeni Ojiambo Ksh. 1,000</h3>
                 <p className="mt-2 text-base text-gray-600">
-                  Have you been fantasizing about writing a great book? Or you've written, and all you get are rejections? The Craft of Creative Writing is the writing companion you need.
-                  No matter what your writing goals are, this book ensures nothing stands between you and good writing. It is a handbook. A guide. A reference point. A promise of hope for your writing. Exactly what you need. Writing is work, so let's get to work, shall
+                  Have you been fantasizing about writing a great book? Or you&apos;ve written, and all you get are rejections? The Craft of Creative Writing is the writing companion you need.
+                  No matter what your writing goals are, this book ensures nothing stands between you and good writing. It is a handbook. A guide. A reference point. A promise of hope for your writing. Exactly what you need. Writing is work, so let&apos;s get to work, shall
                 </p>
               </div>
             </div>
