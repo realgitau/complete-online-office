@@ -8,7 +8,7 @@ const HeroSection = () => {
   return (
     <section id='home'>
       <div className='pt-6 max-w-[1170px] w-full grid gap-4 p-6'>
-        <div className='flex justify-center items-center text-center'>
+        <div className='flex justify-center items-center flex-col md:flex-row text-center'>
           <div className='flex items-center'>
             <div className="mr-4 flex flex-col">
               <div className="icon-wrapper mb-2"><AiOutlineTwitter size={30} /></div>
@@ -17,8 +17,8 @@ const HeroSection = () => {
               <div className="icon-wrapper mb-2"><AiOutlineWhatsApp size={30} /></div>
             </div>
             <div className='relative'>
-              <Image src="/verahprofile.jpeg" alt="verah" width={250} height={250} className='w-[250px] shadow-md' />
-              <div className="absolute bottom-2 left-4 w-[250px] h-[320px] border-black bg-slate-200 border-2 -z-10"></div>
+              <Image src="/verahprofile.jpeg" alt="verah" width={250} height={250} className='w-full md:w-[250px] shadow-md' />
+              <div className="absolute bottom-2 left-4 w-full md:w-[250px] md:h-[320px] border-black bg-slate-200 border-2 -z-10"></div>
             </div>
           </div>
         </div>
