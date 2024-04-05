@@ -2,22 +2,34 @@ import React from 'react';
 
 const Write = () => {
   return (
-    <section id='write' className="bg-gradient-to-br bg-white text-black py-12 rounded-lg">
-      <div className="container mx-auto px-4">
-      <h1 className='text-center font-bold text-4xl'>Why Write?</h1>
-      <hr className='w-6 h-1 mx-auto bg-black border-0 rounded' />
-        <div className="max-w-3xl mx-auto mt-6">
-          <p className="text-base md:text-lg lg:text-xl leading-relaxed">
-          Verah Omwocha is a seasoned publishing professional with over a decade of experience in managing and maintaining high publication standards. Skilled in communications, book editing, and proofreading across various content types, she excels in providing strategic leadership to publication teams. Her expertise includes elevating the quality of institutional documents, website content, and stylistic editing initiatives.
-          Verah is also proficient in conducting editorial training sessions and judging writing competitions. With a commitment to excellence, she contributes to enhancing readability, engagement, and brand visibility through her meticulous editing and leadership skills.
-          She holds a Master's Degree in Literature from Kenyatta University and a Bachelor of Arts degree in Education
-          (Language and Literature) from the University of Nairobi.
-          She is married and has two daughters.
+    <section className="">
+    <div className="py-12 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-          </p>
+            <div className="lg:text-center">
+                <h2
+                    className="font-heading mb-4 bg-orange-100 text-orange-800 px-4 py-2 rounded-lg md:w-64 md:mx-auto text-xs font-semibold tracking-widest text-black uppercase title-font">
+                    WHY WRITING? WHY BOOKS
+                </h2>
+            </div>
+
+            <div className="mt-10">
+                <p>
+                Writing and books possess a transformative power, offering us a window into diverse worlds and perspectives while fostering
+                empathy, understanding, and connection. Through storytelling, we
+                explore the depths of the human experience, challenge our
+                assumptions, and unite in a shared narrative of love, resilience,
+                and hope. In a world marked by division, storytelling reminds us of our common humanity and inspires us to create a more inclusive and compassionate future.
+                For me, everyday moments become extraordinary adventures. As an author, I craft tales that whisk you away to far-off lands and introduce you to characters who feel like old friends. Join me as
+                we journey through laughter, love, and the simple magic of a
+                good story. Welcome to my world, where imagination knows no bounds.
+                My work has been published on:
+                </p>
+            </div>
+
         </div>
-      </div>
-    </section>
+    </div>
+</section>
   )
 }
 
