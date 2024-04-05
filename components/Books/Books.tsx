@@ -25,18 +25,6 @@ const Books = () => {
       price: "Ksh. 950, AVAILABLE AT Nuria store.",
       description: "This is a story of a young girl lost in a world too big for her petite body and unwelcome ideas. A girl trying to understand the love of God. And her husband's. It is about a girl, who is trying to fix puzzles to understand why she is here. And to do what she was sent to do. It's about a girl on a journey to finding herself. To healing the child in her. To finding peace. And digging deep into her soul, to find forgiveness and hand it to the world. Is marriage welcoming of a young girl, broken in so many ways? She asks."
     },
-    {
-      title: "Diary of the Miaha Memoir",
-      imageSrc: "/verahprofile.jpeg",
-      price: "Ksh. 950, AVAILABLE AT Nuria store.",
-      description: "This is a story of a young girl lost in a world too big for her petite body and unwelcome ideas. A girl trying to understand the love of God. And her husband's. It is about a girl, who is trying to fix puzzles to understand why she is here. And to do what she was sent to do. It's about a girl on a journey to finding herself. To healing the child in her. To finding peace. And digging deep into her soul, to find forgiveness and hand it to the world. Is marriage welcoming of a young girl, broken in so many ways? She asks."
-    },
-    {
-      title: "Diary of the Miaha Memoir",
-      imageSrc: "/verahprofile.jpeg",
-      price: "Ksh. 950, AVAILABLE AT Nuria store.",
-      description: "This is a story of a young girl lost in a world too big for her petite body and unwelcome ideas. A girl trying to understand the love of God. And her husband's. It is about a girl, who is trying to fix puzzles to understand why she is here. And to do what she was sent to do. It's about a girl on a journey to finding herself. To healing the child in her. To finding peace. And digging deep into her soul, to find forgiveness and hand it to the world. Is marriage welcoming of a young girl, broken in so many ways? She asks."
-    },
     // Add more book entries here
   ];
 
@@ -58,6 +46,7 @@ const Books = () => {
 };
 
 export default Books;
+
 
 
 
