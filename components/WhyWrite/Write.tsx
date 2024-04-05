@@ -14,7 +14,7 @@ const Write = () => {
             </div>
 
             <div className="mt-10">
-                <p>
+                <p className='text-black'>
                 Writing and books possess a transformative power, offering us a window into diverse worlds and perspectives while fostering
                 empathy, understanding, and connection. Through storytelling, we
                 explore the depths of the human experience, challenge our
