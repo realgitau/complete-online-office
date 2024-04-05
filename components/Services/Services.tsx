@@ -127,7 +127,7 @@ function Services() {
                 <label className="block text-gray-700 font-bold mb-2" htmlFor="message">Message</label>
                 <textarea
                   className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                  id="message" rows="4" placeholder="Enter any additional information"></textarea>
+                  id="message" placeholder="Enter any additional information"></textarea>
               </div>
               <div className="flex items-center justify-center">
                 <button
