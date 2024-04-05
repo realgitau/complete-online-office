@@ -10,11 +10,12 @@ const Awards = () => {
             <h1 className="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white mb-4">01. Awards</h1>
             <p className="text-gray-700 dark:text-gray-300 mb-4">My work has been recognized on the following platforms:</p>
             <ul className="list-disc pl-6 text-gray-700 dark:text-gray-300">
-              <li>Brittle</li>
-              <li>Brittle</li>
-              <li>Brittle</li>
-              <li>Brittle</li>
-              <li>Brittle</li>
+              <li>Brittle Paper</li>
+              <li>Writers Space Africa</li>
+              <li>Qazini.com</li>
+              <li>The Standard</li>
+              <li>Writers Guild Kenya</li>
+              <li>Kalahari Review</li>
             </ul>
           </div>
         </div>
@@ -25,11 +26,7 @@ const Awards = () => {
             <h1 className="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white mb-4">02. Achievements</h1>
             <p className="text-gray-700 dark:text-gray-300 mb-4">My work has been acknowledged on the following platforms:</p>
             <ul className="list-disc pl-6 text-gray-700 dark:text-gray-300">
-              <li>Brittle</li>
-              <li>Brittle</li>
-              <li>Brittle</li>
-              <li>Brittle</li>
-              <li>Brittle</li>
+              <li>Tito Livio Award for Historical Fiction for the short story, "The Crescent Moon"</li>
             </ul>
           </div>
         </div>
@@ -38,14 +35,7 @@ const Awards = () => {
         <div className="bg-gray-100 dark:bg-gray-800 rounded-md overflow-hidden flex items-center">
           <div className="p-6 md:p-8">
             <h1 className="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white mb-4">03. Recognitions</h1>
-            <p className="text-gray-700 dark:text-gray-300 mb-4">My work has been commended on the following platforms:</p>
-            <ul className="list-disc pl-6 text-gray-700 dark:text-gray-300">
-              <li>Brittle</li>
-              <li>Brittle</li>
-              <li>Brittle</li>
-              <li>Brittle</li>
-              <li>Brittle</li>
-            </ul>
+            <p className="text-gray-700 dark:text-gray-300 mb-4">More to come ...</p>
           </div>
         </div>
       </div>

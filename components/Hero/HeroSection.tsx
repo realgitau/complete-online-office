@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import { HiArrowDownOnSquare } from 'react-icons/hi2';
-import { SocialIcon } from 'react-social-icons';
+import { AiOutlineTwitter, AiFillLinkedin, AiFillInstagram, AiOutlineWhatsApp } from 'react-icons/ai';
 
 const HeroSection = () => {
   return (
@@ -11,14 +11,15 @@ const HeroSection = () => {
         <div className='flex justify-center items-center text-center'>
           <div className='flex items-center'>
             <div className="mr-4 flex flex-col">
-              <SocialIcon url="https://twitter.com" bgColor="#000000" className="mb-2" style={{ width: '40px', height: '40px' }} />
-              <SocialIcon url="https://twitter.com" bgColor="#000000" className="mb-2" style={{ width: '40px', height: '40px' }} />
-              <SocialIcon url="https://twitter.com" bgColor="#000000" className="mb-2" style={{ width: '40px', height: '40px' }} />
+              <div className="icon-wrapper mb-2"><AiOutlineTwitter size={30} /></div>
+              <div className="icon-wrapper mb-2"><AiFillLinkedin size={30} /></div>
+              <div className="icon-wrapper mb-2"><AiFillInstagram size={30} /></div>
+              <div className="icon-wrapper mb-2"><AiOutlineWhatsApp size={30} /></div>
             </div>
             <div className='relative'>
               <div className="absolute top-0 right-0 w-5 h-5 bg-black rotate-[30deg] "></div>
               <Image src="/verahprofile.jpeg" alt="verah" width={250} height={250} className='w-[250px] shadow-md' />
-              <div className="absolute bottom-2 left-4 w-[250px] h-[320px] border-black border-2  -z-10"></div>
+              <div className="absolute bottom-2 left-4 w-[250px] h-[320px] border-black border-2 -z-10"></div>
             </div>
           </div>
         </div>
@@ -37,3 +38,6 @@ const HeroSection = () => {
 }
 
 export default HeroSection;
+
+
+
