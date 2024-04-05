@@ -8,21 +8,25 @@ const Footer = () => {
   };
 
   return (
-    <footer className='mx-auto max-x-3xl px-4 sm:px-6 md:max-w-5xl'>
+    <footer className='mx-auto max-w-3xl px-4 sm:px-6 md:max-w-5xl'>
       <hr className='w-full h-0.5 bg-gray-300 my-8' />
-      <div className='mx-auto p-4 flex flex-col text-center text-neutral-900 md:flex-row md:justify-between'>
-        <div>&copy; {getCurrentYear()} Verah </div>
-        <div className="flex flex-row items-center justify-center space-x-2 mb-1">
-          <a href="https://twitter.com" className="text-gray-600 hover:text-blue-500 mr-4" target="_blank" rel="noopener noreferrer">
-            <AiOutlineTwitter className="text-2xl" />
-          </a>
-          <a href="https://linkedin.com" className="text-gray-600 hover:text-blue-500" target="_blank" rel="noopener noreferrer">
-            <AiFillLinkedin className="text-2xl" />
-          </a>
+      <div className='mx-auto p-4 flex flex-col items-center justify-center text-neutral-900 md:flex-row md:justify-between'>
+        <div className="mb-4 md:mb-0">&copy; {getCurrentYear()} Verah</div>
+        <div className="flex items-center space-x-4">
+          <SocialLink href="https://twitter.com" icon={<AiOutlineTwitter />} />
+          <SocialLink href="https://linkedin.com" icon={<AiFillLinkedin />} />
         </div>
       </div>
-      
     </footer>
+  );
+};
+
+// SocialLink component
+const SocialLink = ({ href, icon }) => {
+  return (
+    <a href={href} className="text-gray-600 hover:text-blue-500" target="_blank" rel="noopener noreferrer">
+      {icon}
+    </a>
   );
 };
 
