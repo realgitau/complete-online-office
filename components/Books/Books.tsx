@@ -1,10 +1,13 @@
 import React from 'react';
+import Image from 'next/image';
 
 // A component for displaying individual book information
 const Book = ({ title, imageSrc, price, description }) => {
   return (
     <div className="relative overflow-hidden bg-white shadow-md rounded-xl max-w-md">
-      <img src={imageSrc} alt={title} className="h-70 w-full object-cover rounded-xl" />
+      <div className="h-70 w-full relative">
+        <Image src={imageSrc} alt={title} layout="fill" objectFit="cover" className="rounded-xl" />
+      </div>
       <div className="p-4">
         <h3 className="text-xl md:text-2xl font-bold text-gray-900">{title}</h3>
         <p className="mt-2 text-base text-gray-600">{description}</p>
@@ -55,5 +58,6 @@ const Books = () => {
 };
 
 export default Books;
+
 
 
