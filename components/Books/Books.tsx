@@ -1,8 +1,17 @@
+"use client";
+
 import React from 'react';
 import Image from 'next/image';
 
+interface BookProps {
+  title: string;
+  imageSrc: string;
+  price: string;
+  description: string;
+}
+
 // A component for displaying individual book information
-const Book = ({ title, imageSrc, price, description }) => {
+const Book: React.FC<BookProps> = ({ title, imageSrc, price, description }) => {
   return (
     <div className="relative overflow-hidden bg-white shadow-md rounded-xl max-w-md">
       <div className="h-70 w-full relative">
@@ -18,7 +27,7 @@ const Book = ({ title, imageSrc, price, description }) => {
 };
 
 const Books = () => {
-  const books = [
+  const books: BookProps[] = [
     {
       title: "Diary of the Miaha Memoir",
       imageSrc: "/verahprofile.jpeg",
@@ -46,7 +55,3 @@ const Books = () => {
 };
 
 export default Books;
-
-
-
-
