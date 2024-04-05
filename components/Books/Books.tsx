@@ -50,6 +50,28 @@ const Books = () => {
           ))}
         </div>
       </div>
+      <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div className="max-w-xl mx-auto text-center xl:max-w-2xl">
+          <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl xl:text-5xl mb-6">BOOKS </h2>
+          <p className="mb-4">Here are some of the Awards that I&apos;ve received over the years</p>
+        </div>
+        <div className="grid max-w-4xl lg:max-w-6xl grid-cols-1 mx-auto mt-8 text-center gap-y-4 sm:gap-x-8 sm:grid-cols-2 lg:grid-cols-3 sm:text-left">
+          {books.map((book, index) => (
+            <Book key={index} {...book} />
+          ))}
+        </div>
+      </div>
+      <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div className="max-w-xl mx-auto text-center xl:max-w-2xl">
+          <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl xl:text-5xl mb-6">BOOKS </h2>
+          <p className="mb-4">Here are some of the Awards that I&apos;ve received over the years</p>
+        </div>
+        <div className="grid max-w-4xl lg:max-w-6xl grid-cols-1 mx-auto mt-8 text-center gap-y-4 sm:gap-x-8 sm:grid-cols-2 lg:grid-cols-3 sm:text-left">
+          {books.map((book, index) => (
+            <Book key={index} {...book} />
+          ))}
+        </div>
+      </div>
     </section>
   );
 };
