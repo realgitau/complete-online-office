@@ -22,7 +22,7 @@ const HeroSection = () => {
             </div>
           </div>
         </div>
-        <div className="p-6 flex flex-col items-center">
+        <div className="p-6 flex flex-col items-center ">
           <p className="text-center mb-4">
             Versatile Fullstack Developer proficient in crafting dynamic solutions across web, mobile, and desktop platforms. As a dedicated developer, I thrive on embracing novel opportunities and continually expanding my skill set.
           </p>

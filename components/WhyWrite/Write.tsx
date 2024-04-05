@@ -23,7 +23,6 @@ const Write = () => {
                 For me, everyday moments become extraordinary adventures. As an author, I craft tales that whisk you away to far-off lands and introduce you to characters who feel like old friends. Join me as
                 we journey through laughter, love, and the simple magic of a
                 good story. Welcome to my world, where imagination knows no bounds.
-                My work has been published on:
                 </p>
             </div>
 
