@@ -6,7 +6,7 @@ const Awards = () => {
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="max-w-xl mx-auto text-center xl:max-w-2xl">
           <h2 className="text-3xl font-bold leading-tight text-gray-50 sm:text-4xl xl:text-5xl mb-6">AWARDS!</h2>
-          <p className="mb-4">Here are some of the Awards that I've received over the years</p>
+          <p className="mb-4">Here are some of the Awards that I&apos;ve received over the years</p>
         </div>
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
           <div className="relative overflow-hidden bg-white shadow-md rounded-xl">
