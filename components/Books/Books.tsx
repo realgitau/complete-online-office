@@ -14,6 +14,7 @@ const Book: React.FC<BookProps> = ({ title, imageSrc, price, description = '' })
   const [showFullDescription, setShowFullDescription] = useState(false);
   const [showBuyForm, setShowBuyForm] = useState(false);
   const [phoneNumber, setPhoneNumber] = useState('');
+  const [Name, setName] = useState('');
 
   const truncatedDescription = description.slice(0, 50);
 
@@ -28,6 +29,10 @@ const Book: React.FC<BookProps> = ({ title, imageSrc, price, description = '' })
   const handlePhoneNumberChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setPhoneNumber(e.target.value);
   };
+
+  const handleNameChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setName(e.target.value);
+  }
 
   const handleBuy = () => {
     console.log('Book purchased:', { title, price, phoneNumber });
@@ -52,10 +57,14 @@ const Book: React.FC<BookProps> = ({ title, imageSrc, price, description = '' })
         
         {showBuyForm && (
           <div className="mt-4 ">
-            <form onSubmit={handleBuy}>
+            <form onSubmit={handleBuy} >
               <p>Book: {title}</p>
               <p>Price: {price}</p>
-              <input type="tel" value={phoneNumber} onChange={handlePhoneNumberChange} className='p-4 border-2 rounded-xl border-black' placeholder="Enter your phone number" />
+              <div className='gap-2'>
+                <input type="tel" value={Name} onChange={handleNameChange} className='p-2 border-2 rounded-xl border-black mt-2' placeholder="name" />
+                <input type="tel" value={phoneNumber} onChange={handlePhoneNumberChange} className='p-2 border-2 rounded-xl border-black mt-2' placeholder="phone number" />
+              </div>
+              
               <button type="submit" className="mt-2 bg-black text-white py-2 px-4 rounded hover:bg-white hover:text-black">Purchase</button>
             </form>
           </div>
