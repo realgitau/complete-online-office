@@ -29,7 +29,7 @@ const About = () => {
                   Verah is also proficient in conducting editorial training sessions and judging writing competitions. With a commitment to excellence, she contributes to enhancing readability, engagement, and brand visibility through her meticulous editing and leadership skills.
                 </p>
                 <p className="mt-4">
-                  She holds a Master's Degree in Literature from Kenyatta University and a Bachelor of Arts degree in Education (Language and Literature) from the University of Nairobi. She is married and has two daughters.
+                  She holds a Master&apos;s Degree in Literature from Kenyatta University and a Bachelor of Arts degree in Education (Language and Literature) from the University of Nairobi. She is married and has two daughters.
                 </p>
               </>
             )}
