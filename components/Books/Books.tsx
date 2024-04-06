@@ -7,15 +7,31 @@ interface BookProps {
   title: string;
   imageSrc: string;
   price: string;
-  description?: string; // Making description optional
+  description?: string;
 }
 
 const Book: React.FC<BookProps> = ({ title, imageSrc, price, description = '' }) => {
   const [showFullDescription, setShowFullDescription] = useState(false);
+  const [showBuyForm, setShowBuyForm] = useState(false);
+  const [phoneNumber, setPhoneNumber] = useState('');
+
   const truncatedDescription = description.slice(0, 50);
 
   const toggleDescription = () => {
     setShowFullDescription(!showFullDescription);
+  };
+
+  const toggleBuyForm = () => {
+    setShowBuyForm(!showBuyForm);
+  };
+
+  const handlePhoneNumberChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setPhoneNumber(e.target.value);
+  };
+
+  const handleBuy = () => {
+    console.log('Book purchased:', { title, price, phoneNumber });
+    setShowBuyForm(false);
   };
 
   return (
@@ -32,7 +48,19 @@ const Book: React.FC<BookProps> = ({ title, imageSrc, price, description = '' })
           </button>
         </p>
         <p className="mt-2 text-base text-gray-600">Price: {price}</p>
-        <button className="mt-4 bg-black text-white py-2 px-4 rounded hover:bg-white hover:text-black">Buy</button>
+        <button className="mt-4 bg-black text-white py-2 px-4 rounded hover:bg-white hover:text-black hover:border-black " onClick={toggleBuyForm}>Buy</button>
+        
+        {showBuyForm && (
+          <div className="mt-4 ">
+            <form onSubmit={handleBuy}>
+              <p>Book: {title}</p>
+              <p>Price: {price}</p>
+              <input type="tel" value={phoneNumber} onChange={handlePhoneNumberChange} className='p-4 border-2 rounded-xl border-black' placeholder="Enter your phone number" />
+              <button type="submit" className="mt-2 bg-black text-white py-2 px-4 rounded hover:bg-white hover:text-black">Purchase</button>
+            </form>
+          </div>
+        )}
+
       </div>
     </div>
   );
