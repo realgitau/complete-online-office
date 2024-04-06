@@ -40,7 +40,7 @@ const Book: React.FC<BookProps> = ({ title, imageSrc, price, description = '' })
   };
 
   return (
-    <div className="relative overflow-hidden w-full bg-white shadow-md mt-6 mb-6 rounded-xl">
+    <div className="relative overflow-hidden w-full bg-white shadow-md mt-6 mb-6 rounded-xl" id='books'>
       <div className="h-80 md:h-96 w-full relative">
         <Image src={imageSrc} alt={title} layout="fill" objectFit="cover" className="rounded-xl" />
       </div>

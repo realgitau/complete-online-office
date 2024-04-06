@@ -1,8 +1,16 @@
-import React from 'react';
+"use client"
+
+import React, { useState } from 'react';
 
 const About = () => {
+  const [showFullContent, setShowFullContent] = useState(false);
+
+  const toggleContent = () => {
+    setShowFullContent(!showFullContent);
+  };
+
   return (
-    <section className="bg-gray-100 py-12 rounded-lg">
+    <section className="bg-gray-100 py-12 rounded-lg" id='about'>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto">
           <div className="text-center">
@@ -12,12 +20,19 @@ const About = () => {
             <p>
               Verah Omwocha is a seasoned publishing professional with over a decade of experience in managing and maintaining high publication standards. Skilled in communications, book editing, and proofreading across various content types, she excels in providing strategic leadership to publication teams. Her expertise includes elevating the quality of institutional documents, website content, and stylistic editing initiatives.
             </p>
-            <p className="mt-4">
-              Verah is also proficient in conducting editorial training sessions and judging writing competitions. With a commitment to excellence, she contributes to enhancing readability, engagement, and brand visibility through her meticulous editing and leadership skills.
-            </p>
-            <p className="mt-4">
-              She holds a Master&apos;s Degree in Literature from Kenyatta University and a Bachelor of Arts degree in Education (Language and Literature) from the University of Nairobi. She is married and has two daughters.
-            </p>
+            {!showFullContent && (
+              <button className="text-blue-500 hover:underline" onClick={toggleContent}>Read More</button>
+            )}
+            {showFullContent && (
+              <>
+                <p className="mt-4">
+                  Verah is also proficient in conducting editorial training sessions and judging writing competitions. With a commitment to excellence, she contributes to enhancing readability, engagement, and brand visibility through her meticulous editing and leadership skills.
+                </p>
+                <p className="mt-4">
+                  She holds a Master's Degree in Literature from Kenyatta University and a Bachelor of Arts degree in Education (Language and Literature) from the University of Nairobi. She is married and has two daughters.
+                </p>
+              </>
+            )}
           </div>
         </div>
       </div>
@@ -26,6 +41,7 @@ const About = () => {
 };
 
 export default About;
+
 
 
 

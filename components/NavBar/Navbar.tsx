@@ -37,9 +37,9 @@ const Navbar = () => {
         {/* Navigation links */}
         <div className={`lg:flex flex-col lg:flex-row ${isOpen ? 'block' : 'hidden'} lg:space-x-4 lg:mt-0 mt-4 flex flex-col items-center text-xl`}>
           <a href="/" className="text-white  px-4 py-2 hover:text-orange-600 ">Home</a>
-          <a href="#Projects" className="text-white  px-4 py-2  hover:text-orange-600">Projects</a>
-          <a href="/" className="text-white  px-4 py-2  hover:text-orange-600">About</a>
-          <a href="/" className="text-white  px-4 py-2  hover:text-orange-600">Contact Me</a>
+          <a href="#about" className="text-white  px-4 py-2  hover:text-orange-600">About</a>
+          <a href="#books" className="text-white  px-4 py-2  hover:text-orange-600">Books</a>
+          <a href="#contact" className="text-white  px-4 py-2  hover:text-orange-600">Contact Me</a>
         </div>
       </div>
     </nav>
