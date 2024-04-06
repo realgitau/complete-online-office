@@ -27,7 +27,7 @@ function Services() {
           <div className="flex h-[180px] flex-col justify-between rounded-md p-6">
             <div className="space-y-2 dark:text-white">
               <h3 className="font-bold dark:text-white">Consultation</h3>
-              <p className="text-sm text-muted-foreground">App dir, Routing, Layouts, Loading UI and API routes.</p>
+              <p className="text-sm text-muted-foreground">reach to me and I&apos;ll respond.</p>
             </div>
           </div>
         </div>
@@ -38,8 +38,8 @@ function Services() {
         >
           <div className="flex h-[180px] flex-col justify-between rounded-md p-6">
             <div className="space-y-2 dark:text-white">
-              <h3 className="font-bold dark:text-white">Consultation</h3>
-              <p className="text-sm text-muted-foreground">App dir, Routing, Layouts, Loading UI and API routes.</p>
+              <h3 className="font-bold dark:text-white">Motivational talk</h3>
+              <p className="text-sm text-muted-foreground">reach to me and I&apos;ll respond.</p>
             </div>
           </div>
         </div>
@@ -50,8 +50,8 @@ function Services() {
         >
           <div className="flex h-[180px] flex-col justify-between rounded-md p-6">
             <div className="space-y-2 dark:text-white">
-              <h3 className="font-bold dark:text-white">Consultation</h3>
-              <p className="text-sm text-muted-foreground">App dir, Routing, Layouts, Loading UI and API routes.</p>
+              <h3 className="font-bold dark:text-white">Author&apos;s .,d</h3>
+              <p className="text-sm text-muted-foreground">reach to me and I&apos;ll respond.</p>
             </div>
           </div>
         </div>
