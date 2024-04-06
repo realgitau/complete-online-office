@@ -3,10 +3,8 @@
 import React, { useState } from 'react';
 
 function Services() {
-  // State to manage whether the appointment form is displayed or not
   const [showAppointmentForm, setShowAppointmentForm] = useState(false);
 
-  // Function to toggle the display of the appointment form
   const toggleAppointmentForm = () => {
     setShowAppointmentForm(!showAppointmentForm);
   };
@@ -24,7 +22,7 @@ function Services() {
 
         <div
           className="relative overflow-hidden rounded-lg border bg-white dark:bg-black select-none hover:shadow hover:shadow-teal-200 p-2"
-          onClick={toggleAppointmentForm} // Toggle form when clicked
+          onClick={toggleAppointmentForm}
         >
           <div className="flex h-[180px] flex-col justify-between rounded-md p-6">
             <div className="space-y-2 dark:text-white">
@@ -36,7 +34,7 @@ function Services() {
 
         <div
           className="relative overflow-hidden rounded-lg border bg-white dark:bg-black select-none hover:shadow hover:shadow-teal-200 p-2"
-          onClick={toggleAppointmentForm} // Toggle form when clicked
+          onClick={toggleAppointmentForm}
         >
           <div className="flex h-[180px] flex-col justify-between rounded-md p-6">
             <div className="space-y-2 dark:text-white">
@@ -48,7 +46,7 @@ function Services() {
 
         <div
           className="relative overflow-hidden rounded-lg border bg-white dark:bg-black select-none hover:shadow hover:shadow-teal-200 p-2"
-          onClick={toggleAppointmentForm} // Toggle form when clicked
+          onClick={toggleAppointmentForm}
         >
           <div className="flex h-[180px] flex-col justify-between rounded-md p-6">
             <div className="space-y-2 dark:text-white">
@@ -57,10 +55,11 @@ function Services() {
             </div>
           </div>
         </div>
+
+        {/* Repeat the above divs for other services */}
 
       </div>
 
-      {/* Appointment form */}
       {showAppointmentForm && (
         <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center">
           <div className="bg-white p-8 rounded-md w-96">
@@ -71,59 +70,33 @@ function Services() {
                 <input
                   className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                   id="name" type="text" placeholder="Enter your name" />
+                  <label className="block text-gray-700 font-bold mb-2" htmlFor="email">Email</label>
+                  <input
+                    className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    id="email" type="email" placeholder="johndoe@gmail.com" />
+                  <label className="block text-gray-700 font-bold mb-2" htmlFor="phone">Phone Number</label>
+                  <input
+                    className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    id="phone" type="text" placeholder="0712345678" />
+                  <label className="block text-gray-700 font-bold mb-2" htmlFor="name">Message</label>
+                  <textarea
+                    className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    id="message" placeholder="Enter your message">
+                  </textarea>
+
               </div>
-              <div>
-                <label className="block text-gray-700 font-bold mb-2" htmlFor="email">Email</label>
-                <input
-                  className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                  id="email" type="email" placeholder="Enter your email" />
-              </div>
-              <div>
-                <label className="block text-gray-700 font-bold mb-2" htmlFor="phone">Phone Number</label>
-                <input
-                  className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                  id="phone" type="tel" placeholder="Enter your phone number" />
-              </div>
-              <div>
-                <label className="block text-gray-700 font-bold mb-2" htmlFor="date">Date</label>
-                <input
-                  className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                  id="date" type="date" placeholder="Select a date" />
-              </div>
-              <div>
-                <label className="block text-gray-700 font-bold mb-2" htmlFor="time">Time</label>
-                <input
-                  className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                  id="time" type="time" placeholder="Select a time" />
-              </div>
-              <div>
-                <label className="block text-gray-700 font-bold mb-2" htmlFor="service">Service</label>
-                <select
-                  className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                  id="service" name="service">
-                  <option value="">Select a service</option>
-                  <option value="haircut">Consultation</option>
-                  <option value="coloring">Public Speaking</option>
-                  <option value="styling">Writer&apos;s Advice</option>
-                </select>
-              </div>
-              <div>
-                <label className="block text-gray-700 font-bold mb-2" htmlFor="message">Message</label>
-                <textarea
-                  className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                  id="message" placeholder="Enter any additional information"></textarea>
-              </div>
-              <div className="flex items-center justify-center">
+
+              <div className="flex items-center justify-between">
                 <button
                   className="bg-gray-900 text-white py-2 px-4 rounded hover:bg-gray-800 focus:outline-none focus:shadow-outline"
                   type="submit">
                   Book Appointment
                 </button>
+                <button onClick={toggleAppointmentForm} className="mt-4 bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded">
+                  Close
+                </button>
               </div>
             </form>
-            <button onClick={toggleAppointmentForm} className="mt-4 bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center">
-              Close
-            </button>
           </div>
         </div>
       )}
@@ -133,3 +106,4 @@ function Services() {
 }
 
 export default Services;
+

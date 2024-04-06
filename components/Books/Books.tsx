@@ -19,7 +19,7 @@ const Book: React.FC<BookProps> = ({ title, imageSrc, price, description = '' })
   };
 
   return (
-    <div className="relative overflow-hidden w-full bg-white shadow-md rounded-xl">
+    <div className="relative overflow-hidden w-full bg-white shadow-md mt-6 mb-6 rounded-xl">
       <div className="h-80 md:h-96 w-full relative">
         <Image src={imageSrc} alt={title} layout="fill" objectFit="cover" className="rounded-xl" />
       </div>
@@ -62,6 +62,7 @@ const Books: React.FC = () => {
   ];
 
   return (
+    
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
       {books.map((book, index) => (
         <Book key={index} {...book} />

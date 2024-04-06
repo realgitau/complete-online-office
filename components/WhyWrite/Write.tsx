@@ -2,7 +2,7 @@ import React from 'react';
 
 const Write = () => {
   return (
-    <section className="">
+    <section className="mt-8 mb-8 rounded-xl">
     <div className="py-12 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 

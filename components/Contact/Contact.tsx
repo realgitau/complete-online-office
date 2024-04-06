@@ -2,12 +2,11 @@ import React from 'react';
 
 const Contact = () => {
   return (
-    <div className="bg-white dark:bg-gray-900" id="contact">
+    <div className="bg-white mt-8 mb-8 rounded-xl dark:bg-gray-900" id="contact">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 text-center">
         <h2 className="text-4xl font-bold dark:text-gray-100">Contact</h2>
         <p className="pt-6 pb-6 text-base max-w-2xl text-center m-auto dark:text-gray-400">
-          Want to contact me? Choose an
-          option below and I&apos;ll reply
+          Want to contact me? Choose an option below and I&apos;ll reply
         </p>
       </div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-16 grid md:grid-cols-2 lg:grid-cols-2 gap-y-8 md:gap-x-8 md:gap-y-8 lg:gap-x-8 lg:gap-y-16">
@@ -52,7 +51,7 @@ const Contact = () => {
             <div className="mb-5">
               <label htmlFor="email_address" className="sr-only">Email Address</label>
               <input id="email_address" type="email" placeholder="Email Address" autoComplete="off"
-                className="w-full px-4 py-3 border-2 placeholder-text-gray-800 dark:text-white rounded-md outline-none dark:placeholder-text-gray-200 dark:bg-gray-900   focus:ring-4  border-gray-300 focus:border-gray-600 ring-gray-100 dark:border-gray-600 dark:focus:border-white dark:ring-0"
+                className="w-full px-4 py-3 border-2 placeholder-text-gray-800 dark:text-white rounded-md outline-none dark:placeholder-text-gray-200 dark:bg-gray-900 focus:ring-4  border-gray-300 focus:border-gray-600 ring-gray-100 dark:border-gray-600 dark:focus:border-white dark:ring-0"
                 name="email" />
             </div>
             <div className="mb-3">
@@ -62,8 +61,7 @@ const Contact = () => {
               </textarea>
             </div>
             <button type="submit"
-              className="w-full py-4 font-semibold text-white transition-colors bg-gray-900 rounded-md hover:bg-gray-800 focus:outline-none focus:ring-offset-2 focus:ring focus:ring-gray-200 px-7 dark:bg-white dark:text-black ">Send
-              Message
+              className="w-full py-4 font-semibold text-white transition-colors bg-gray-900 rounded-md hover:bg-gray-800 focus:outline-none focus:ring-offset-2 focus:ring focus:ring-gray-200 px-7 dark:bg-white dark:text-black ">Send Message
             </button>
           </form>
         </div>
